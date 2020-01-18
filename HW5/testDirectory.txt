@@ -1,0 +1,4 @@
+test1 - given example
+test2 - word over 32 characters, error
+test3 - word exactly 32 characters
+test4 - count works

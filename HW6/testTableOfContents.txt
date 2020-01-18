@@ -1,0 +1,27 @@
+1) given example
+    EXP: Reachable: 1, 2, 3, 10, 11, 12
+         Unreachable: 4, 5, 6, 7, 8, 9, 13, 14, 15
+2) #1
+   There are exactly 9 program variables, numbered 1 through 9.
+   Error: variable num not btw 1-9
+   EXP: Invalid integer value: 10
+3) #7
+   If any integer value is outside of the correct range,
+   print an error message to stderr and exit
+   Error, dest node outside of range 1-5
+   EXP: Invalid integer value: 6
+4) no variable statements
+    EXP: Reachable:
+         Unreachable: 1, 2, 3, 4, 5
+5) no statements
+    EXP: Reachable:
+         Unreachable: 1, 2, 3, 4, 5
+6) overwrite variable pointer
+    EXP: Reachable: 5
+         Unreachable: 1, 2, 3, 4
+7) N = 9, match each variable to each generated
+    EXP: Reachable: 1, 2, 3, 4, 5, 6, 7, 8, 9
+         Unreachable:
+8) one variable, 7 nodes chained together
+    EXP: Reachable: 1, 2, 3, 4, 5, 6, 7
+         Unreachable:
